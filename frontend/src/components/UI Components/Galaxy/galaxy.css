@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #space {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    perspective: 500px;
+    position: relative;
+  }
+  
+  .background-patch {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    mix-blend-mode: screen;
+  }
+  
+  #stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+  
+  .star {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.9);
+  }
+  
+  .star::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transform: translateZ(-30px);
+    opacity: 0;
+  }
+  
+  .star::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: linear-gradient(90deg, currentColor 0%, transparent 100%);
+    transform: translateY(-50%) rotateY(90deg);
+    transform-origin: left;
+    opacity: var(--streak-opacity, 0);
+  }
+  
+  .nebula {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.15;
+    mix-blend-mode: screen;
+  }
