@@ -5,21 +5,16 @@ function Developer() {
     <div>
       <div>
         <p className="sub-title">Web Developers</p>
-        <div className="section divide-3">
+        <div className="section divide-2">
           <Profile
-            img="Profile/DeveeshShetty.jpg"
-            name="Deveesh Shetty"
-            socials="https://www.linkedin.com/in/deveesh-shetty-908539214"
+            img="Profile/HimanshuShetty.jpg"
+            name="Himanshu Shetty"
+            socials="https://in.linkedin.com/in/himanshu-shetty"
           />
           <Profile
-            img="Profile/Tejas.jpg"
-            name="Tejas G K"
-            socials="https://www.linkedin.com/in/tejas-gk"
-          />
-          <Profile
-            img="Profile/Rohan.jpeg"
-            name="Rohan"
-            socials="https://www.linkedin.com/in/rohan-44aa02228"
+            img="Profile/TechShetty.jpg"
+            name="Pratheek G Shetty"
+            socials="https://in.linkedin.com/in/techshetty"
           />
         </div>
       </div>

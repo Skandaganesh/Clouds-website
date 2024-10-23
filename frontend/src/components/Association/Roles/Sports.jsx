@@ -5,17 +5,24 @@ function Sports() {
     <div>
       <div>
         <p className="sub-title">Sports Secretary</p>
-        <div className="section divide-2">
-          <Profile 
-            img="Profile/ShyamsundarSingh.jpg" 
-            name="Shyamsundar Singh" 
-            socials="https://www.linkedin.com/in/shyamsundar-singh-6616a0222"
+        <div className="section divide-3">
+          <Profile
+            img="Profile/SoujanyaRao.jpg"
+            name="Soujanya Rao"
+            role="Sports Head "
+            socials="https://www.linkedin.com/in/soujanya-rao-3b5150229"
           />
           <Profile
-            img="Profile/MahammadZahir.jpeg"
-            name="Mahammad Zahir"
-            // role="Joint Sports Secretary"
-            socials="https://www.linkedin.com/in/mahammad-zahir-99b988206"
+            img="Profile/SanjayGowda.jpeg"
+            name="Sanjay Gowda"
+            role="Sports Head "
+            socials="http://linkedin.com/in/sanjay-gowda-a611b7238"
+          />
+          <Profile 
+            img="Profile/MEGHASHETTY.jpg" 
+            name="Meghashree K" 
+            role="Joint Sports Head "
+            socials="https://www.linkedin.com/in/meghashree-k-103893262/"
           />
         </div>
       </div>

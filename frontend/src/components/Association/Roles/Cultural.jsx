@@ -4,30 +4,25 @@ function Cultural() {
   return (
     <div>
       <div>
-        <p className="sub-title">Cultural Secretary</p>
-        <div className="section divide-2">
+        <p className="sub-title">Cultural Co-ordinators</p>
+        <div className="section divide-3">
           <Profile 
-            img="Profile/NurainKk.jpeg" 
-            name="Nurain K K" 
-            socials="https://www.linkedin.com/in/nurain-kk-4631bb207"
+            img="Profile/HamshiniShetty.jpg" 
+            name="Hamshini S Shetty" 
+            role="Cultural Head" 
+            socials="https://www.linkedin.com/in/hamshini-shetty"
           />
           <Profile 
-            img="Profile/ShashwathShetty.jpg" 
-            name="Shashwath" 
+            img="Profile/VageeshBhat.jpg" 
+            name="Vageesh Bhat" 
+            role="Joint Cultural Head" 
             socials="https://www.linkedin.com/in/shashwath-shetty-004187235"
           />
-        </div>
-        <p className="sub-title">Joint Cultural Secretary</p>
-        <div className="section divide-2">
           <Profile 
-            img="Profile/AnushreeRai.jpg" 
-            name="Anushree Rai N" 
-            socials="https://www.linkedin.com/in/anushree-rai-n-1420812a3"
-          />
-          <Profile 
-            img="Profile/Punya.jpg" 
-            name="Punya" 
-            socials="https://www.linkedin.com/in/punya-poojary-kadambar-19068b226"
+            img="Profile/VAISHNAVI.jpg" 
+            name="Vaishnavi " 
+            role="Joint Cultural Head" 
+            socials="http://www.linkedin.com/in/vaishnavi-suvarna-97515226a"
           />
         </div>
       </div>
