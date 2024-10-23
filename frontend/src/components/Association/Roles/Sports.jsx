@@ -22,7 +22,7 @@ function Sports() {
         <p className="sub-title">Joint Sports Secretary</p>
         <div className="section divide-2">
           <Profile
-            img="Profile/AnanthHegde.jpeg"
+            img="Profile/AnanthHegde.png"
             name="M Ananth Hegde"
             role="Joint Sports Head "
             socials="https://www.linkedin.com/in/ananth-hegde-3b478326a/"
