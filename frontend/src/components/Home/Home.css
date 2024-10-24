@@ -53,8 +53,8 @@ body {
     aspect-ratio: 1 !important;
 }
 
-.CSPL:hover {
-    animation: rotate-card 1 2s ease-in-out;
+.logo-holder:hover >.CSPL{
+    animation: rotate-card 2s ease-in-out alternate infinite;
     transform-style: preserve-3d;
     transform-origin: top;
 }
@@ -62,7 +62,6 @@ body {
 .arpan {
     position: relative;
 }
-
 .arpan::after {
     content: "Coming Soon...";
     width: 50%;
@@ -127,5 +126,4 @@ body {
     
     .other-events h2 {
         font-size: 1.5rem;
-    }
-}
+    }}

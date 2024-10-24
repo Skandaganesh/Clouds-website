@@ -12,7 +12,7 @@ function Event() {
             socials="https://www.linkedin.com/in/blenson-d-souza-7879551ba"
           />
           <Profile 
-            img="Profile/anish.png" 
+            img="Profile/Anish_bg.jpeg" 
             name="Anish" 
             socials=""
           />
