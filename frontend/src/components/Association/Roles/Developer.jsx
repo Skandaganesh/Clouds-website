@@ -12,7 +12,7 @@ function Developer() {
             socials="https://in.linkedin.com/in/himanshu-shetty"
           />
           <Profile
-            img="Profile/TechShetty.jpg"
+            img="Profile/PratheekGShetty.jpg"
             name="Pratheek G Shetty"
             socials="https://in.linkedin.com/in/techshetty"
           />

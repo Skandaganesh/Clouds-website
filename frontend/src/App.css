@@ -31,6 +31,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #1792d5;
 }
+.container{
+  overflow: hidden;
+}
 
 @font-face {
   font-family: "Seven-Segment";

@@ -1,10 +1,11 @@
+import './Home.css'
 function OtherEvents() {
   return (
     <div id="other-events">
       <h1 className="title">Upcoming Events</h1>
       <div className="event-list">
         <div className="other-events">
-          <div>
+          <div className='logo-holder CSPLdiv'>
             <img
               src="Events/CSPL23logo.png"
               alt="Computer Science Premier League"
@@ -23,7 +24,7 @@ function OtherEvents() {
           </div>
         </div>
         <div className="other-events">
-          <div className="arpan">
+          <div className="arpan logo-holder">
             <img src="Events/Arpan.png" alt="Arpan" className="APRAN" />
           </div>
           <div className="other-event-content">
