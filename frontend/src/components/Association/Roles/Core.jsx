@@ -12,38 +12,38 @@ function Core() {
           extras="HOD of Computer Science"
         />
         <Profile
-          img="Profile/SrinivasPM.jpeg"
+          img="Profile/prapulla.jpg"
           role="Staff Co-ordinator"
-          name="Srinivas P M"
-          socials="https://www.linkedin.com/in/prof-srinivas-p-m-8183b6223"
+          name="Ms. Prapulla G"
+          socials=""
         />
         <Profile
-          img="Profile/SuhanKm.jpg"
-          role="Vice President"
-          name="Suhan K M"
-          socials="https://www.linkedin.com/in/suhan-km-48253622b"
+          img="Profile/AdarshRag.jpg"
+          role="Staff Co-ordinator"
+          name="Dr. Adarsh Rag S"
+          socials="https://www.linkedin.com/in/adarsh-rag-s-08791a76/"
         />
       </div>
       <br />
       <div className="section divide-3">
+      <Profile
+          img="Profile/DeveeshShetty.jpg"
+          role="Vice President"
+          name="Deveesh Shetty"
+          socials="https://www.linkedin.com/in/deveesh-shetty/"
+        />
         <Profile
-          img="Profile/ShubhamOhdar.jpeg"
+          img="Profile/DeelanLasrado.png"
           role="Secretary"
-          name="Shubham"
-          socials="https://www.linkedin.com/in/shubham-ohdar-72934a1b7"
+          name="Deelan Lasrado"
+          socials="https://www.linkedin.com/in/deelanlasrado"
         />
         <Profile 
-          img="Profile/SudeepNNaik.jpg" 
+          img="Profile/GaganV.jpg" 
           role="Treasurer" 
-          name="Sudeep N Naik"
-          socials="http://linkedin.com/in/sudeep-naik-9819b821a"
+          name="Gagan V"
+          socials="https://www.linkedin.com/in/gagan-v11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           />
-        <Profile
-          img="Profile/Akarsh.jpeg"
-          role="Treasurer"
-          name="Akarsh"
-          socials=""
-        />
       </div>
     </div>
   )

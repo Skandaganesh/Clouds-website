@@ -1,43 +1,7 @@
-/* Landing Page */
-#landing {
-    padding-bottom: 2rem;
+body {
+    overflow-x: hidden;
 }
-.landing-image {
-    padding-block: 2rem;
-}
-.landing-image > img {
-    width: min(25rem, 60%);
-    aspect-ratio: 1;
-    display: block;
-    margin: auto;
-    cursor: pointer;
-}
-.landing-content > h1 {
-    font-size: 3rem;
-}
-.landing-content > h2 {
-    font-size: 2rem;
-}
-.landing-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.landing-content > p {
-    margin-top: 1rem;
-    font-size: 1.375rem;
-    width: min(45rem, 90%);
-}
-
-/* Other Events Section */
-
-#other-events {
-    /* min-height: 100vh; */
-}
-
 .event-list {
-    /* min-height: 80vh; */
     margin-bottom: 8rem;
     --columns: 2;
     display: grid;
@@ -46,13 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-.event-list > .other-events > div > img {
-    width: min(20rem, 45%);
-    display: block;
-    aspect-ratio: 3 / 2;
-    border-radius: 2rem;
-    cursor: pointer;
-}
+
 .event-list > .other-events {
     display: flex;
     flex-direction: column;
@@ -60,39 +18,51 @@
     height: 100%;
     justify-content: space-around;
 }
+
+.event-list > .other-events > div > img {
+    width: min(20rem, 45%);
+    display: block;
+    aspect-ratio: 3 / 2;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
 .event-list > .other-events > div:has(img) {
     display: grid;
     place-items: center;
     margin: auto;
 }
+
 .event-list > .other-events > .other-event-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .event-list > .other-events > .other-event-content > h2 {
     margin-block: 1.5rem;
     width: 90%;
     text-align: center;
 }
+
 .event-list > .other-events > .other-event-content > p {
     width: min(35rem, 90%);
 }
+
 .CSPL {
     aspect-ratio: 1 !important;
 }
+
 .CSPL:hover {
     animation: rotate-card 1 2s ease-in-out;
     transform-style: preserve-3d;
     transform-origin: top;
 }
-.arpan:hover,
-.arpan:hover::after {
-    /* animation: shake 1 1s ease-in-out; */
-}
+
 .arpan {
     position: relative;
 }
+
 .arpan::after {
     content: "Coming Soon...";
     width: 50%;
@@ -113,25 +83,12 @@
     cursor: pointer;
 }
 
-.landing-image > img {
-    scale: 1;
-    animation: zoom-in 500ms ease-in-out;
-}
-
-.scroll-down {
-    display: none;
-}
-
-@keyframes bounce {
-    50% {
-        transform: translateY(0.5rem) translateX(-50%);
-    }
-}
-@keyframes  rotate-card {
+@keyframes rotate-card {
     50% {
         transform: rotateY(180deg);
     }
 }
+
 @keyframes shake {
     25% {
         translate: 5px;
@@ -140,60 +97,35 @@
         translate: -5px;
     }
     75% {
-        translate: 5px
+        translate: 5px;
     }
     100% {
         translate: 0;
     }
 }
 
-@keyframes zoom-in {
-    50% {
-        scale: 1.1;
-    }
-}
-
 @media only screen and (max-width: 50em) {
-    #landing {
-        /* padding-bottom: 3rem; */
-    }
     #other-events {
         margin-bottom: 5rem;
     }
-    .landing-image {
-        padding-top: 1rem;
-    }
+    
     .event-list {
         --columns: 1;
     }
+    
     .event-list > .other-events > .other-event-content > p {
         text-align: center;
     }
+    
     .arpan::after {
         padding-inline: 3rem;
     }
-    .landing-content > p {
-        font-size: 1rem;
-    }
-    .other-events h2 {
-        font-size: 1.5rem;
-    }
+    
     .other-events p {
         font-size: 1rem;
     }
     
-}
-@media only screen and (max-width: 35rem) {
-    .scroll-down {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: var(--clr-primary);
-        padding: 1rem;
-        border-radius: 50%;
-        animation: bounce infinite 2s ease-in-out;
+    .other-events h2 {
+        font-size: 1.5rem;
     }
-
 }

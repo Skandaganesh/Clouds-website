@@ -1,0 +1,128 @@
+.landing-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing-image {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-image > img {
+    width: min(25rem, 70%); 
+    max-width: 100%;
+    aspect-ratio: 1;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    scale: 1;
+    animation: zoom-in 500ms ease-in-out;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative; 
+}
+
+.landing-content > h1,
+.landing-content > p {
+    font-size: 3.5rem; 
+    font-weight: 600; 
+}
+
+.scroll-down {
+    display: none;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .landing-image {
+        padding: 1rem;
+    }
+
+    .landing-content {
+        justify-content: center; 
+        padding-top: 0; 
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-60%); 
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    .landing-content > h1 {
+        font-size: 3rem; 
+    }
+
+    .landing-content > p {
+        font-size: 2rem; 
+    }
+}
+
+@media only screen and (max-width: 35em) {
+    .landing-image > img {
+        width: 80%;
+    }
+
+    .scroll-down {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--clr-primary);
+        padding: 1rem;
+        border-radius: 50%;
+        animation: bounce infinite 2s ease-in-out;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .landing-image img {
+        width: 40vh !important;
+    }
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(0.5rem) translateX(-50%);
+    }
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+/* @keyframes move-arrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.moving-icon {
+    animation: move-arrow 1s ease-in-out infinite; 
+} */

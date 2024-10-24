@@ -4,8 +4,7 @@ import Cultural from "./Roles/Cultural"
 import Technical from "./Roles/Technical"
 import Developer from "./Roles/Developer"
 import Sports from "./Roles/Sports"
-import Journal from "./Roles/Journal"
-import Media from "./Roles/Media"
+import Joint from "./Roles/Joint"
 import Others from "./Roles/Others"
 import "./Association.css"
 
@@ -19,9 +18,8 @@ function Association() {
         <Cultural />
         <Technical />
         <Developer />
+        <Joint />
         <Sports />
-        <Journal />
-        <Media />
         <Others />
         {/* Others has Placement Co-ordinator and Documentation / Marketing */}
       </main>

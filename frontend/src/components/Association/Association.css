@@ -1,38 +1,56 @@
+<<<<<<< HEAD
 #association {
-    /* min-height: 100vh; */
+    padding-bottom: 4rem;
 }
+=======
+/* #association {
+    /* min-height: 100vh; */
+
+>>>>>>> ad4579f8d157d2e06ab9dc07b077d92856eabef2
 
 .clouds-association .section {
     display: grid;
     margin-inline: auto;
     padding-inline: 1rem;
-    gap: 3rem;
-
-    overflow: scroll;
+    gap: 2rem;
+    overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    margin-bottom: 2rem;
 }
+
 .clouds-association .section::-webkit-scrollbar {
     display: none;
 }
+
 .divide-2 {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(14rem, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.divide-2 > div:first-child {
-    grid-column: 2 / 3;
-}
+
 .divide-3 {
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(14rem, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 .divide-4 {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(14rem, 1fr));
+    gap: 1.5rem;
 }
+
 .divide-4 > .profile > div {
-    padding-inline: 0.25rem;
+    padding-inline: 0.5rem;
 }
 
 .compress {
-    padding-inline: 5rem !important;
+    padding-inline: 2rem !important;
     overflow: hidden;
 }
 
@@ -40,103 +58,95 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-inline: auto;
     padding-bottom: 0.5rem;
-    /* text-transform: uppercase; */
     isolation: isolate;
-
-    --gap: 4px;     /* the gap */
-    --border-width: 12px;    /* border thickness*/
-    --color: lightblue; /* the color */
-    
+    --gap: 4px;
+    --border-width: 12px;
+    --color: lightblue;
     cursor: pointer;
     background-color: #131313;
-    /* filter: grayscale(50%); */
+    border-radius: 12px;
+    transition: 0.3s ease;
+    max-width: 100%;
 }
-
 
 .profile > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
     margin-block: 1rem;
+    text-align: center;
+    font-size: 1rem;
 }
+
 .clouds-association .profile img {
-    width: 15rem;
-    aspect-ratio: 1;
-    object-position: top;
+    width: 240px;  
+    height: 280px; 
     object-fit: cover;
     cursor: pointer;
+    border-radius: 8px;
+    transition: none;
 }
 
 .sub-title {
-    font-size: clamp(1.25rem, 5vw, 2rem);
-    margin-block: 1rem 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-block: 8rem 2rem;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-.profile,
-.profile > div {
-    overflow: hidden;
-}
-/* .profile > img:hover {
-    scale: 1.1;
-} */
 
 @media only screen and (min-width: 60em) {
     .clouds-association .section > .profile {
         padding: calc(var(--gap) + var(--border-width));
         --_color-new: #131313 0 25%, var(--color) 0 50%;
-        --_gradient1: repeating-linear-gradient(90deg ,var(--_color-new)) repeat-x;
-        --_gradient2: repeating-linear-gradient(180deg,var(--_color-new)) repeat-y;
+        --_gradient1: repeating-linear-gradient(90deg, var(--_color-new)) repeat-x;
+        --_gradient2: repeating-linear-gradient(180deg, var(--_color-new)) repeat-y;
         background:
-        var(--_gradient1) var(--_partial, 25%) 0   ,var(--_gradient2) 0    var(--_partial,125%),
-        var(--_gradient1) var(--_partial,125%) 100%,var(--_gradient2) 100% var(--_partial, 25%);
-        background-size: 200% var(--border-width),var(--border-width) 200%;
+            var(--_gradient1) var(--_partial, 25%) 0, var(--_gradient2) 0 var(--_partial, 125%),
+            var(--_gradient1) var(--_partial, 125%) 100%, var(--_gradient2) 100% var(--_partial, 25%);
+        background-size: 200% var(--border-width), var(--border-width) 200%;
         background-color: #131313;
-        transition: .3s;
+        border-radius: 12px;
     }
+
     .profile:hover {
         --_partial: 75%;
-        /* filter: grayscale(100%); */
-        /* 👆 If b&w on hover */
-      }
+    }
 }
 
 @media only screen and (max-width: 60em) {
-    .clouds-association .section > .profile  {
+    .divide-2,
+    .divide-3,
+    .divide-4 {
+        grid-template-columns: 1fr;
+        gap: 1rem; 
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .clouds-association .section > .profile {
         border: none;
-        width: 5rem;
-        /* transition: border-radius 300ms ease-in-out; */
+        width: auto;
+        padding: 1rem;
+        border-radius: 10px;
     }
-    /* .profile:hover {
-        border-radius: 1em;
-    } */
-    .clouds-association .section {
-        /* overflow: hidden; */
-        gap: 1rem;
-        overflow: scroll;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-    .clouds-association .divide-4::after {
-        content: "";
-        position: absolute;
-        z-index: 555;
-        right: 2rem;
-        top: 0;
-        bottom: 0;
-    }
+
     .clouds-association .profile img {
-        width: 100%;
-        aspect-ratio: 5 / 7;
         object-fit: cover;
+        border-radius: 10px;
+        width: 240px;
+        height: 280px;
     }
+
     .profile > div {
-        font-size: 0.675rem;
+        font-size: 0.875rem;
         text-align: center;
+        margin-block: 0.5rem;
     }
 
     .compress {
