@@ -1,27 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import { ChevronDown } from 'lucide-react';
 import './Landing.css';
-
-const MovingIcon = () => (
-    <div className="w-12 h-12 text-blue-400 moving-icon">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-full h-full"
-        >
-            <path d="M12 17l-5-5h10l-5 5zm0 4a1 1 0 01-.707-1.707L16.293 12H7.707l4.586 4.586A1 1 0 0112 21z" />
-        </svg>
-    </div>
-);
 
 const Landing = () => {
     const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollPos = window.scrollY;
-            setIsVisible(currentScrollPos < 100);
+            const landingSection = document.querySelector('.landing-container');
+            if (landingSection) {
+                const rect = landingSection.getBoundingClientRect();
+                setIsVisible(rect.top >= 0 && rect.bottom > 0);
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -43,33 +34,36 @@ const Landing = () => {
 
                     <div className="space-y-8">
                         <div className="max-w-4xl mx-auto">
-                        <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-relaxed px-4">
-                          <span className="font-semibold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">
-                              <Typewriter
-                                  words={['Computer Legends Of the Unified Department(CLOUDS).']}
-                                  loop={0}
-                                  cursor
-                                  cursorStyle="|"
-                                  typeSpeed={70}
-                                  deleteSpeed={50}
-                                  delaySpeed={3000}
-                              />
-                            </span>
-                          </p>
+                            <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-relaxed px-4">
+                                <span className="font-semibold bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">
+                                    <Typewriter
+                                        words={['Computer Legends Of the Unified Department(CLOUDS).']}
+                                        loop={0}
+                                        cursor
+                                        cursorStyle="|"
+                                        typeSpeed={70}
+                                        deleteSpeed={50}
+                                        delaySpeed={3000}
+                                    />
+                                </span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* <div
-                className={`absolute bottom-12 transition-all duration-500 ease-in-out ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            <div
+                className={`scroll-arrow-container ${
+                    isVisible ? 'opacity-100' : 'opacity-0'
                 }`}
             >
-                <div className="flex flex-col items-center space-y-2">
-                    <MovingIcon />
+                <div className="scroll-arrow">
+                    <ChevronDown size={40} strokeWidth={2.5} />
                 </div>
-            </div> */}
+                <div className="scroll-arrow" style={{ animationDelay: '0.2s' }}>
+                    <ChevronDown size={40} strokeWidth={2.5} />
+                </div>
+            </div>
 
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 pointer-events-none" />
         </div>
