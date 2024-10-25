@@ -117,15 +117,21 @@
     .divide-2,
     .divide-3,
     .divide-4 {
-        grid-template-columns: 1fr;
-        gap: 1rem; 
-        max-width: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 600px;
         margin: 0 auto;
+    }
+
+    .divide-3 > .profile:nth-child(3) {
+        grid-column: 1 / span 2;
+        width: 50%;
+        margin-inline: auto;
     }
 
     .clouds-association .section > .profile {
         border: none;
-        width: auto;
         padding: 1rem;
         border-radius: 10px;
     }
@@ -133,7 +139,8 @@
     .clouds-association .profile img {
         object-fit: cover;
         border-radius: 10px;
-        width: 240px;
+        width: 100%;
+        max-width: 240px;
         height: 280px;
     }
 
@@ -145,5 +152,70 @@
 
     .compress {
         padding-inline: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 60em) {
+    .divide-2,
+    .divide-3,
+    .divide-4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 100%;
+        padding-inline: 1rem;
+        margin: 0 auto;
+    }
+
+    .divide-3 > .profile:nth-child(3) {
+        grid-column: 1 / span 2;
+        width: 45%; 
+        margin-inline: auto;
+    }
+
+    .clouds-association .section > .profile {
+        border: none;
+        padding: 0.5rem;
+        border-radius: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .clouds-association .profile img {
+        width: 160px;  
+        height: 200px; 
+        object-fit: cover;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+
+    .profile > div {
+        font-size: 0.75rem; /* Slightly smaller font */
+        text-align: center;
+        margin-block: 0.5rem;
+        padding: 0;
+    }
+
+    .compress {
+        padding-inline: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    .divide-2,
+    .divide-3,
+    .divide-4 {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+
+    .divide-3 > .profile:nth-child(3) {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .clouds-association .profile img {
+        width: 240px;  
+        height: 280px;
     }
 }

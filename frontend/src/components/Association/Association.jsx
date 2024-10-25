@@ -17,10 +17,10 @@ function Association() {
         <Event />
         <Cultural />
         <Technical />
-        <Developer />
         <Joint />
         <Sports />
         <Others />
+        <Developer />
         {/* Others has Placement Co-ordinator and Documentation / Marketing */}
       </main>
     </div>
