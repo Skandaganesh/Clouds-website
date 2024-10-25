@@ -16,7 +16,7 @@ function Cultural() {
             img="Profile/VageeshBhat.jpg" 
             name="Vageesh Bhat" 
             role="Joint Cultural Head" 
-            socials="https://www.linkedin.com/in/shashwath-shetty-004187235"
+            socials="https://www.linkedin.com/in/vageesh-bhat-bb2495237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           />
           <Profile 
             img="Profile/VAISHNAVI.jpg" 
