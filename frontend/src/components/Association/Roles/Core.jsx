@@ -39,7 +39,7 @@ function Core() {
           socials="https://www.linkedin.com/in/deelanlasrado"
         />
         <Profile 
-          img="Profile/GaganV.jpg" 
+          img="Profile/Gagan.jpg" 
           role="Treasurer" 
           name="Gagan V"
           socials="https://www.linkedin.com/in/gagan-v11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"

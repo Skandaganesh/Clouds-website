@@ -5,7 +5,7 @@ function Technical() {
     <div>
       <div>
         <p className="sub-title">Technical Co-oridnators</p>
-        <div className="section divide-3">
+        <div className="section divide-2">
         <Profile
             img="Profile/Chethan.jpeg"
             name="Maroor Chethan Pai"
@@ -23,6 +23,12 @@ function Technical() {
             name="Vaishakh A"
             role="Joint Technical Head"
             socials="https://in.linkedin.com/in/vaishakh-arekere" 
+          />
+          <Profile 
+            img="Profile/MOOLYA .jpg" 
+            name="Moolya Nishant Shriniwas"
+            role="Joint Technical Head"
+            socials="https://www.linkedin.com/in/moolya-nishant-shriniwas-2184b52aa/" 
           />
         </div>
       </div>
