@@ -13,7 +13,7 @@ function Event() {
           />
           <Profile 
             img="Profile/Anish_bg.jpeg" 
-            name="Anish" 
+            name="Anish Shetty" 
             socials=""
           />
         </div>
