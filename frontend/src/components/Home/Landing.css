@@ -101,7 +101,7 @@
 
     .landing-image > img {
         width: 90%;
-        max-width: 450px;
+        max-width: 400px;
     }
 
     .typewriter-wrapper {
@@ -109,7 +109,7 @@
     }
 
     .scroll-arrow-container {
-        bottom: 20%; 
+        bottom: 15%; 
     }
 
     .scroll-arrow svg {
@@ -144,7 +144,7 @@
     }
 
     .scroll-arrow-container {
-        bottom: 25%; 
+        bottom: 20%; 
     }
 }
 
