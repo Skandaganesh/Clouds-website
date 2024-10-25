@@ -9,7 +9,7 @@ function Event() {
           <Profile
             img="Profile/tejasNayak.jpg"
             name="Tejas Nayak"
-            socials="https://www.linkedin.com/in/blenson-d-souza-7879551ba"
+            socials="https://www.linkedin.com/in/tejas-nayak-859a231b1/"
           />
           <Profile 
             img="Profile/Anish_bg.jpeg" 
