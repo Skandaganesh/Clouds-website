@@ -87,7 +87,7 @@
 @media only screen and (max-width: 640px) {
     .landing-container {
         justify-content: flex-start;
-        padding-top: 15vh; 
+        padding-top: 10vh; 
     }
 
     .landing-content {
@@ -105,7 +105,7 @@
     }
 
     .typewriter-wrapper {
-        min-height: 8rem;
+        min-height: 6rem;
     }
 
     .scroll-arrow-container {
