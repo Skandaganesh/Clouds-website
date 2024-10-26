@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .landing-container {
     height: 100vh;
     position: relative;
@@ -11,7 +15,7 @@
 }
 
 .landing-image > img {
-    width: min(25rem, 70%); 
+    width: min(24rem, 75%); 
     max-width: 100%;
     aspect-ratio: 1;
     display: block;
@@ -32,7 +36,7 @@
 }
 
 .typewriter-wrapper {
-    min-height: 12rem; 
+    min-height: 12rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +44,7 @@
 
 .scroll-arrow-container {
     position: absolute;
-    bottom: 15%; 
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -87,7 +91,7 @@
 @media only screen and (max-width: 640px) {
     .landing-container {
         justify-content: flex-start;
-        padding-top: 10vh; 
+        padding-top: 8vh; 
     }
 
     .landing-content {
@@ -96,20 +100,20 @@
 
     .landing-image {
         padding: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem; 
     }
 
     .landing-image > img {
-        width: 90%;
-        max-width: 400px;
+        width: 85%; 
+        max-width: 350px;
     }
 
     .typewriter-wrapper {
-        min-height: 6rem;
+        min-height: 5.5rem; 
     }
 
     .scroll-arrow-container {
-        bottom: 15%; 
+        bottom: 12%; 
     }
 
     .scroll-arrow svg {
@@ -144,10 +148,6 @@
     }
 
     .scroll-arrow-container {
-        bottom: 20%; 
+        bottom: 20%;
     }
-}
-
-body {
-    overflow-x: hidden;
 }

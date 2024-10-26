@@ -9,7 +9,7 @@ function Media() {
           <div className="section">
           <Profile
             img="Profile/SathwikKrishna.jpeg"
-            name="Sathwik Krishna N"
+            name="Sathwik Krishna"
             socials="https://www.linkedin.com/in/sathwik-krishna-7a7630198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
           />
           </div>
