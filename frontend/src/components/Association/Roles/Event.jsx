@@ -12,8 +12,8 @@ function Event() {
             socials="https://www.linkedin.com/in/tejas-nayak-859a231b1/"
           />
           <Profile 
-            img="Profile/Anish_bg.jpeg" 
-            name="Anish Shetty" 
+            img="Profile/AneeshShetty.jpg" 
+            name="Aneesh Shetty" 
             socials=""
           />
         </div>
