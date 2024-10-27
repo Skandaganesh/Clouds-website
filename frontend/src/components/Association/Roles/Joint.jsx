@@ -22,7 +22,7 @@ function Joint() {
         <p className="sub-title">Joint Treasurer</p>
         <div className="section divide-2">
           <Profile
-            img="Profile/SKANDAGANESH.jpg"
+            img="Profile/skanda.jpg"
             name="Skanda Ganesh P V"
             role="Joint Treasurer"
             socials="https://www.linkedin.com/in/skanda-ganesh"
