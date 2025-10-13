@@ -8,42 +8,45 @@ function Core() {
           img="Profile/DrMustafaBasthikodi.jpg"
           role="President"
           name="Dr. Mustafa Basthikodi"
-          socials="https://www.linkedin.com/in/dr-mustafa-basthikodi-3b644442"
           extras="HOD of Computer Science"
+          socials="https://www.linkedin.com/in/dr-mustafa-basthikodi-3b644442/"
         />
         <Profile
           img="Profile/prapulla.jpg"
           role="Staff Co-ordinator"
           name="Ms. Prapulla G"
-          socials=""
+          socials="https://www.linkedin.com/in/prapulla-g-0ba21bb1/"
         />
         <Profile
-          img="Profile/AdarshRag.jpg"
-          role="Staff Co-ordinator"
-          name="Dr. Adarsh Rag S"
-          socials="https://www.linkedin.com/in/adarsh-rag-s-08791a76/"
-        />
-      </div>
-      <br />
-      <div className="section divide-3">
-      <Profile
-          img="Profile/DeveeshShetty.jpg"
+          img="Profile/Srishti Rai M.jpg"
           role="Vice President"
-          name="Deveesh Shetty"
-          socials="https://www.linkedin.com/in/deveesh-shetty/"
+          name="Srishti Rai M"
+          socials="https://www.linkedin.com/in/srishti-rai-m-b6092b272/"
         />
         <Profile
-          img="Profile/DeelanLasrado.png"
+          img="Profile/Ashika.jpg"
           role="Secretary"
-          name="Deelan Lasrado"
-          socials="https://www.linkedin.com/in/deelanlasrado"
+          name="Ashika"
+          socials="https://www.linkedin.com/in/askashika"
         />
-        <Profile 
-          img="Profile/Gagan.jpg" 
-          role="Treasurer" 
-          name="Gagan V"
-          socials="https://www.linkedin.com/in/gagan-v11?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          />
+        <Profile
+          img="Profile/PRASHWIN PJ.jpeg"
+          role="Joint Secretary"
+          name="Prashwin PJ"
+          socials="http://linkedin.com/in/prashwin-prabhakar"
+        />
+        <Profile
+          img="Profile/skanda.jpg"
+          role="Treasurer"
+          name="Skanda"
+          socials="https://www.linkedin.com/in/skanda-ganesh/"
+        />
+        <Profile
+          img="Profile/Abisha Shetty.jpg"
+          role="Joint Treasurer"
+          name="Abisha Shetty"
+          socials="https://www.linkedin.com/in/abisha-shetty-a9351b285"
+        />
       </div>
     </div>
   )
