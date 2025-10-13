@@ -6,29 +6,23 @@ function Technical() {
       <div>
         <p className="sub-title">Technical Co-oridnators</p>
         <div className="section divide-2">
-        <Profile
-            img="Profile/Chethan.jpeg"
-            name="Maroor Chethan Pai"
-            role="Technical Lead"
-            socials="http://linkedin.com/in/chethanpai21"
+          <Profile
+            img="Profile/Apeksha L Naik.jpg"
+            name="Apeksha L Naik"
+            role="Technical Head"
+            socials="https://www.linkedin.com/in/apeksha-l-naik/"
+          />
+          <Profile 
+            img="Profile/Ayyan Anwar.jpg"
+            name="Ayyan Anwar"
+            role="Joint Technical Head"
+            socials="https://www.linkedin.com/in/ayyan-anwar-132965204/"
           />
           <Profile
-            img="Profile/ShreelakshmiPai.jpg"
-            name="Shreelakshmi Pai"
+            img="Profile/Adithya c.png"
+            name="Adithya C"
             role="Joint Technical Head"
-            socials="https://www.linkedin.com/in/shreelakshmi-pai-a14113256"
-          />
-          <Profile 
-            img="Profile/VaishakhKottari.jpeg" 
-            name="Vaishakh A"
-            role="Joint Technical Head"
-            socials="https://in.linkedin.com/in/vaishakh-arekere" 
-          />
-          <Profile 
-            img="Profile/MOOLYA .jpg" 
-            name="Moolya Nishant Shriniwas"
-            role="Joint Technical Head"
-            socials="https://www.linkedin.com/in/moolya-nishant-shriniwas-2184b52aa/" 
+            socials="https://www.linkedin.com/in/adithya-c-871173289/"
           />
         </div>
       </div>
