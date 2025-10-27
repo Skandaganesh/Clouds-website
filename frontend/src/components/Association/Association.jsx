@@ -4,6 +4,7 @@ import Cultural from "./Roles/Cultural"
 import Technical from "./Roles/Technical"
 import Sports from "./Roles/Sports"
 import Others from "./Roles/Others"
+import PlacementAndMarketing from "./Roles/PlacementAndMarketing"
 import "./Association.css"
 
 function Association() {
@@ -17,6 +18,7 @@ function Association() {
         <Technical />
         <Sports />
         <Others />
+        <PlacementAndMarketing />
       </main>
     </div>
   )
